@@ -7,82 +7,89 @@
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #0d0d0d;
-        color: #ffffff;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #000000;
+        color: #e0e0e0;
     }
     header {
-        background-color: #1a1a1a;
-        padding: 40px 20px;
+        background-color: #0a0a0a;
+        padding: 60px 20px;
         border-bottom: 4px solid #4b0f18;
         text-align: center;
     }
     header h1 {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 3rem;
         letter-spacing: 2px;
+        color: #a22a3a;
     }
     header p {
         font-style: italic;
-        color: #a22a3a;
+        color: #4b0f18;
         margin-top: 10px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     nav {
-        background-color: #0f0f0f;
+        background-color: #0a0a0a;
         display: flex;
         justify-content: center;
-        gap: 30px;
-        padding: 15px 0;
+        gap: 40px;
+        padding: 20px 0;
         border-bottom: 2px solid #4b0f18;
     }
     nav a {
-        color: #bfbfbf;
+        color: #a22a3a;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
         letter-spacing: 1px;
         transition: color 0.3s;
     }
     nav a:hover {
-        color: #a22a3a;
+        color: #ffffff;
     }
     .section {
-        padding: 60px 12%;
-        border-bottom: 1px solid #2a2a2a;
+        padding: 80px 10%;
+        border-bottom: 1px solid #4b0f18;
     }
     h2 {
         color: #a22a3a;
-        font-size: 1.8rem;
-        margin-bottom: 20px;
+        font-size: 2rem;
+        margin-bottom: 30px;
     }
     .case-box, .service-box {
-        background-color: #1a1a1a;
+        background-color: #0a0a0a;
         border-left: 5px solid #4b0f18;
-        padding: 20px;
-        margin-bottom: 25px;
-        border-radius: 4px;
+        padding: 25px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .case-box:hover, .service-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px #4b0f18;
     }
     footer {
-        background-color: #0f0f0f;
+        background-color: #0a0a0a;
         text-align: center;
-        padding: 25px;
+        padding: 30px;
         border-top: 2px solid #4b0f18;
         color: #777;
         font-size: 0.9rem;
     }
     .discord-link {
         display: block;
-        margin-top: 20px;
+        margin-top: 25px;
         text-align: center;
         font-size: 1.2rem;
     }
     .discord-link a {
-        color: #7289da;
+        color: #a22a3a;
         text-decoration: none;
         font-weight: bold;
+        transition: color 0.3s;
     }
     .discord-link a:hover {
-        text-decoration: underline;
+        color: #ffffff;
     }
 </style>
 </head>
@@ -125,7 +132,6 @@
         <li>Summary of accusations or dispute</li>
         <li>Relevant evidence (screenshots, logs, or testimony)</li>
     </ul>
-    <p>Submit all information through the designated communication channel of your choosing. A CLC representative will acknowledge your case with full procedural formality.</p>
     <div class="discord-link">
         <p>Join our official Discord:</p>
         <a href="YOUR_DISCORD_INVITE_HERE" target="_blank">Discord Invite Link</a>
